@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Welcome to my blog</title>
+  
+  <subtitle>qq：2873240985    school：宿迁学院</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-02-22T15:15:48.362Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>zhangchengyu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++课堂笔记</title>
+    <link href="http://example.com/2023/02/22/c++%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2023/02/22/c++%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/</id>
+    <published>2023-02-21T16:24:50.000Z</published>
+    <updated>2023-02-22T15:15:48.362Z</updated>
+    
+    <content type="html"><![CDATA[<p>##第一课时<br>1.c++语言的头文件扩展名是  .h<br>  c++语言的源程序文件的扩展名是  .cpp<br>2.c++使用cin和cout进行输入输出必须包含的头文件是  iostream<br>  c++语言程序中使用控制符setw进行格式输出时应包含的头文件是  iomanip<br>3.cin和cout为c++中预定义的对象。<br>    “&gt;&gt;”称为流插入运算符，执行输入功能。<br>    “&lt;&lt;”称为流输出运算符，执行输出功能。<br>4.const与dedine定义变量的区别：（1）const与dedine都可以在c++中定义变量。<br>（2）const要定义常量的类型，define则不需要。如：#define PI 3.1415926，const float PI&#x3D;3.1415926;<br>（3）define不分配内存，const在静态存储区中分配空间。<br>5.（1）endl相当于\n<br>（2）setw(int n)是c++中在输出操作中使用的字段宽度设置，设置输出的域宽，n表示字段宽度。只对紧接着的输出有效，紧接着的输出结束后又变回默认的域宽。<br>当后面紧跟着的输出字段长度小于n的时候，在该字段前面用空格补齐（默认为右对齐）；当输出字段长度大于n时，全部整体输出。<br>（3）setfill（‘$’）表示将代替空格填充为$。<br>（3）left左对齐，right右对齐，都对于整个语句有效。<br>（4）setprecision(int n)，表示输出浮点值n位有效数字，可以四舍五入，只对邻近的有效。<br>（5）fixed写在setprecision(int n)之前，将输出浮点值n位，改为浮点值小数点后的n位。<br>6.dec表示十进制，hex表示十六进制，oct表示八进制。</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;##第一课时&lt;br&gt;1.c++语言的头文件扩展名是  .h&lt;br&gt;  c++语言的源程序文件的扩展名是  .cpp&lt;br&gt;2.c++使用cin和cout进行输入输出必须包含的头文件是  iostream&lt;br&gt;  c++语言程序中使用控制符setw进行格式输出时应包含的头文</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
