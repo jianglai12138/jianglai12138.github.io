@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Welcome to my blog</title>
+  <title>明天不秃顶</title>
   
-  <subtitle>qq：2873240985    school：宿迁学院</subtitle>
+  
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
@@ -10,7 +10,7 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>zhangchengyu</name>
+    <name>晓baby</name>
     
   </author>
   
