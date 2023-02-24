@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-24T16:29:48.181Z</updated>
+  <updated>2023-02-24T17:06:45.830Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片</title>
+    <link href="http://example.com/2023/02/25/%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2023/02/25/%E5%9B%BE%E7%89%87/</id>
+    <published>2023-02-24T16:55:46.000Z</published>
+    <updated>2023-02-24T17:06:45.830Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实这个“分类”并不互斥——一个“类别”是可以包含另一个“类别”的。例如，在要求使用向前迭代器的地方，同样可以使用双向迭代器。</p><p>不同的 STL 容器 支持的迭代器类型不同，在使用时需要留意。<br>   <img src="/.com//%E5%9B%BE%E7%89%87.jpg" alt="balabala"></p><h2 id="指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用"><a href="#指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用" class="headerlink" title="指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用"></a>指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;其实这个“分类”并不互斥——一个“类别”是可以包含另一个“类别”的。例如，在要求使用向前迭代器的地方，同样可以使用双向迭代器。&lt;/p&gt;
+&lt;p&gt;不同的 STL 容器 支持的迭代器类型不同，在使用时需要留意。&lt;br&gt;   &lt;img src=&quot;/.com//%E5%9B%BE%E</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>c语言概况</title>
