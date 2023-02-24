@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-24T17:10:39.925Z</updated>
+  <updated>2023-02-24T17:13:21.179Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/02/25/%E5%9B%BE%E7%89%87/"/>
     <id>http://example.com/2023/02/25/%E5%9B%BE%E7%89%87/</id>
     <published>2023-02-24T16:55:46.000Z</published>
-    <updated>2023-02-24T17:10:39.925Z</updated>
+    <updated>2023-02-24T17:13:21.179Z</updated>
     
     <content type="html"><![CDATA[<p>其实这个“分类”并不互斥——一个“类别”是可以包含另一个“类别”的。例如，在要求使用向前迭代器的地方，同样可以使用双向迭代器。</p><p>不同的 STL 容器 支持的迭代器类型不同，在使用时需要留意。<br>   <img src="/.com//%E5%9B%BE%E7%89%87.jpg" alt="balabala"></p><h2 id="指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用"><a href="#指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用" class="headerlink" title="指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用"></a>指针满足随机访问迭代器的所有要求，可以当作随机访问迭代器使用</h2>]]></content>
     
