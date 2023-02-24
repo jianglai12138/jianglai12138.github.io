@@ -8,7 +8,7 @@
       <link href="/2023/02/24/c-with-STL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2023/02/24/c-with-STL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>1.头文件：（1）万能头文件： #include&lt;bits&#x2F;stdc++.h&gt;<br>（2）加快cpp输入输出：#define FIO ios::sync_with_stdio(0);cin.tie(0); （不要忘记在main（）函数中写下：FIO;）<br>2.使用标准库空间std： using namespace std;<br>3.不要使用endl（复杂拖延时间），改用\n：(1)头文件替换： #define endl ‘\n’<br>（2）直接输出’\n’</p><hr>]]></content>
       
       
       
