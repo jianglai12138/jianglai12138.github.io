@@ -21,7 +21,7 @@
       <link href="/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/"/>
       <url>/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/</url>
       
-        <content type="html"><![CDATA[<p>1.字母大小写转化ASCII+-32<br>2.数字反转<br>输入123.4<br>输出4.321</p><p>…<br>float a,b&#x3D;0;<br>cin&gt;&gt;a;<br>int c&#x3D;a * 10;  &#x2F;&#x2F;使c变为整数<br>while(c){<br>    b&#x3D;b * 10+c%10;<br>    c&#x3D;c&#x2F;10;<br>}<br>cout&lt;&lt;b&#x2F;1000;<br>…</p><p>while循环<br>开始（1）c&#x3D;1234，b&#x3D;4，c&#x3D;123<br>（2）c&#x3D;123，b&#x3D;43，c&#x3D;12<br>（3）c&#x3D;12，b&#x3D;432，c&#x3D;1<br>（4）c&#x3D;1，b&#x3D;4321，c&#x3D;0<br>结束</p><hr>]]></content>
+        <content type="html"><![CDATA[<ul><li>1.字母大小写转化ASCII+-32</li><li>2.数字反转<br>输入123.4<br>输出4.321</li></ul><p>…<br>float a,b&#x3D;0;<br>cin&gt;&gt;a;<br>int c&#x3D;a * 10;  &#x2F;&#x2F;使c变为整数<br>while(c){<br>    b&#x3D;b * 10+c%10;<br>    c&#x3D;c&#x2F;10;<br>}<br>cout&lt;&lt;b&#x2F;1000;<br>…</p><p>while循环<br>开始（1）c&#x3D;1234，b&#x3D;4，c&#x3D;123<br>（2）c&#x3D;123，b&#x3D;43，c&#x3D;12<br>（3）c&#x3D;12，b&#x3D;432，c&#x3D;1<br>（4）c&#x3D;1，b&#x3D;4321，c&#x3D;0<br>结束</p><ul><li><ol start="3"><li></li></ol></li></ul><hr>]]></content>
       
       
       
