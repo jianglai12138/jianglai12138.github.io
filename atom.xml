@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-03T00:48:52.831Z</updated>
+  <updated>2023-03-07T05:55:34.796Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,18 @@
     <link href="http://example.com/2023/02/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2023/02/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/</id>
     <published>2023-02-28T12:28:51.000Z</published>
-    <updated>2023-03-03T00:48:52.831Z</updated>
+    <updated>2023-03-07T05:55:34.796Z</updated>
     
-    <content type="html"><![CDATA[<p><b>数据结构的定义</b><br>数据项，数据对象，数据结构（逻辑结构，存储结构，数据的运算）</p><p>逻辑结构（1）表示：（1）图表表示 （2）二元组表示 B&#x3D;（D，R）<br>（2）类型：集合，线性结构，树形结构，图形结构</p><p>存储类型：顺序存储结构，链式存储结构，索引存储结构，哈希存储结构</p><p><b>数据结构的类型</b></p><p>数据类型：（1）c++语言中常用的数据类型（2）存储空间的分配，抽象数据类型</p><hr><p><b>顺序表的9种操作</b></p><ul><li>1.LinList(&amp;L)<br>构造一个空的线性表L</li><li>2.DestroyList（&amp;L）<br>销毁线性表L</li><li>3.ClearList（&amp;L）<br>将线性表L重置为空表</li><li>4.ListEmpty（L）<br>若线性表为空表，则返回ture，否则返回false。</li><li>5.Listength（L）<br>返回线性表L中的数据元素个数</li><li>6.GetElem（L，i，&amp;e）；<br>用e返回线性表L中第i个数据元素的值<br>前提：1 &lt;&#x3D; i &lt;&#x3D; ListLength(L)</li><li>7.LocateElem(L,e,compare())<br>返回L中第1个与e满足compare（）的数据元素的位序，若不存在返回0。<br>前提：compare（）是数据元素判定函数。</li><li>8.PriorElem(L,cur_e,&amp;pre_e)<br>若cur_e是L数据元素，且不是第一个。则用pre_e返回它的前驱，否则无意义。</li><li>9.NextElem（L，cur_e,&amp;next_e）<br>若cur_e是L的数据元素，且不是最后一个，则用next_e返回它的后继，否则操作失败,next_e无意义。</li><li>10..Listlnsert(&amp;L,i,e)<br>在L的第i个位置之前插入新的数据元素e,L的长度加一。</li><li>11.ListDelete(&amp;L,i,&amp;e)<br>删除前（长度为n ) :<br>( a1,a2…,ai-1,ai, ai+1,..,an)<br>删除后（长度为n -1 ) :<br>(a1,a2,…,ai-1,ai+1,…,an)<br>操作结果:删除L的第i个数据元素，并用e返回其值,L的长度减一。</li><li>12.ListTraverse(&amp;L, visited())<br>依次对线性表中每个元素调用visited()</li></ul><p>注意：这些运算都是在线性表L已经存在的情况下进行的。</p><hr>]]></content>
+    <content type="html"><![CDATA[<img src="/2023/02/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/绪论.jpg" width="70%" height="70%"><hr><p><b>顺序表的9种操作</b></p><ul><li>1.LinList(&amp;L)<br>构造一个空的线性表L</li><li>2.DestroyList（&amp;L）<br>销毁线性表L</li><li>3.ClearList（&amp;L）<br>将线性表L重置为空表</li><li>4.ListEmpty（L）<br>若线性表为空表，则返回ture，否则返回false。</li><li>5.Listength（L）<br>返回线性表L中的数据元素个数</li><li>6.GetElem（L，i，&amp;e）；<br>用e返回线性表L中第i个数据元素的值<br>前提：1 &lt;&#x3D; i &lt;&#x3D; ListLength(L)</li><li>7.LocateElem(L,e,compare())<br>返回L中第1个与e满足compare（）的数据元素的位序，若不存在返回0。<br>前提：compare（）是数据元素判定函数。</li><li>8.PriorElem(L,cur_e,&amp;pre_e)<br>若cur_e是L数据元素，且不是第一个。则用pre_e返回它的前驱，否则无意义。</li><li>9.NextElem（L，cur_e,&amp;next_e）<br>若cur_e是L的数据元素，且不是最后一个，则用next_e返回它的后继，否则操作失败,next_e无意义。</li><li>10..Listlnsert(&amp;L,i,e)<br>在L的第i个位置之前插入新的数据元素e,L的长度加一。</li><li>11.ListDelete(&amp;L,i,&amp;e)<br>删除前（长度为n ) :<br>( a1,a2…,ai-1,ai, ai+1,..,an)<br>删除后（长度为n -1 ) :<br>(a1,a2,…,ai-1,ai+1,…,an)<br>操作结果:删除L的第i个数据元素，并用e返回其值,L的长度减一。</li><li>12.ListTraverse(&amp;L, visited())<br>依次对线性表中每个元素调用visited()</li></ul><p>注意：这些运算都是在线性表L已经存在的情况下进行的。</p><hr>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;b&gt;数据结构的定义&lt;/b&gt;&lt;br&gt;数据项，数据对象，数据结构（逻辑结构，存储结构，数据的运算）&lt;/p&gt;
-&lt;p&gt;逻辑结构（1）表示：（1）图表表示 （2）二元组表示 B&amp;#x3D;（D，R）&lt;br&gt;（2）类型：集合，线性结构，树形结构，图形结构&lt;/p&gt;
-&lt;p&gt;存储类型：顺序</summary>
+    <summary type="html">&lt;img src=&quot;/2023/02/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/绪论.jpg&quot; width=&quot;70%&quot; height=&quot;70%&quot;&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;b&gt;顺序表的9种操作&lt;/b&gt;&lt;/p&gt;
+</summary>
       
     
     
