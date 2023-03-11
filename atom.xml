@@ -45,25 +45,18 @@
     <link href="http://example.com/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/"/>
     <id>http://example.com/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/</id>
     <published>2023-02-27T15:59:26.000Z</published>
-    <updated>2023-03-03T07:19:25.823Z</updated>
+    <updated>2023-03-11T07:08:06.548Z</updated>
     
-    <content type="html"><![CDATA[<p><b>知识点</b></p><ul><li>1.字母大小写转化ASCII+-32</li><li><ol start="2"><li></li></ol></li></ul><hr><p><b>详解</b></p><ul><li>1.数字反转<br>输入123.4<br>输出4.321</li></ul><p>…<br>float a,b&#x3D;0;<br>cin&gt;&gt;a;<br>int c&#x3D;a * 10;  &#x2F;&#x2F;使c变为整数<br>while(c){<br>    b&#x3D;b * 10+c%10;<br>    c&#x3D;c&#x2F;10;<br>}<br>cout&lt;&lt;b&#x2F;1000;<br>…</p><p>while循环<br>开始（1）c&#x3D;1234，b&#x3D;4，c&#x3D;123<br>（2）c&#x3D;123，b&#x3D;43，c&#x3D;12<br>（3）c&#x3D;12，b&#x3D;432，c&#x3D;1<br>（4）c&#x3D;1，b&#x3D;4321，c&#x3D;0<br>结束</p><ul><li>2.题目：母牛的故事：递归<br>打表理清思路先，把牛家分大牛、三岁牛宝、两岁牛宝、一岁牛宝（虚岁，出生就是一岁啦）</li></ul><img src="/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/刷题3.jpg" width="70%" height="70%"><p>在第5年时，牛宝开始陆续长成大牛，三岁牛宝就变成了大牛<br>同理，两岁牛宝变三岁牛宝，一岁牛宝变两岁牛宝<br>而新的一岁牛宝则是去年的大牛跟三岁牛宝的总牛数（三岁牛宝今年长成大牛也开始生小牛宝了）<br>思路理清后，就要求递推公式了，把4种牛分别用字母标记：<br>大牛a[]、三岁牛宝b[]、两岁牛宝c[]、一岁牛宝d[]以及牛头数s[]<br>可以得出第n年的各个公式：<br>a[n] &#x3D; a[n-1]+b[n-1]<br>b[n] &#x3D; c[n-1]<br>c[n] &#x3D; d[n-1]<br>d[n] &#x3D; a[n-1]+b[n-1] &#x3D; a[n]<br>则总牛数 s[n]&#x3D;a[n]+b[n]+c[n]+d[n]<br>    &#x3D; a[n-1]+b[n-1]+c[n-1]+d[n-1]+a[n-1]+b[n-1]<br>    &#x3D; s[n-1]+a[n-2]+b[n-2]+c[n-2]<br>    &#x3D; s[n-1]+a[n-3]+b[n-3]+c[n-3]+d[n-3]<br>    &#x3D; s[n-1]+s[n-3]</p><ul><li>3.最大公因数和最小公倍数求发<br>(1)辗转相除法<br>…<br>cin&gt;&gt;m&gt;&gt;n;<br>a &#x3D; m;<br>b &#x3D; n;<br>while (n !&#x3D;0 ){<br>  t &#x3D; m%n;<br>  m &#x3D; n;<br>  n &#x3D; t;<br>  }<br>max &#x3D; m；<br>min &#x3D; a * b&#x2F;max;<br>…<br>（2）暴力法<br>…<br>for(i &#x3D; 1;i&lt; &#x3D; n &amp;&amp; i&lt;&#x3D; m; ++i ){<br>  if(m%i &#x3D;&#x3D; 0 &amp;&amp; n%i &#x3D;&#x3D; 0)<br>  max&#x3D;i;<br>}<br>min &#x3D; m * n &#x2F; max;<br>…</li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<p><b>做题技巧</b></p><ul><li>1.在动手写代码之前，在草纸上尽可能地写好要实现的流程。</li><li>2.在代码中，尽量把每个部分模块化，写成函数、结构体或类。</li><li>3.对于一些可能重复用到的概念，可以统一转化，方便处理：如，某题给你 “YY-MM-DD 时：分” 把它抽取到一个函数，处理成秒，会减少概念混淆。</li><li>4.调试时分块调试。模块化的好处就是可以方便的单独调某一部分。</li><li>5.写代码的时候一定要思路清晰，不要想到什么写什么，要按照落在纸上的步骤写。</li></ul><hr><p><b>知识点</b></p><ul><li>1.字母大小写转化ASCII+-32</li><li>2.指针的变量的交换，正确的为：<br>int temp,*p1,*p2;<br>temp &#x3D; *p1;<br>*p1 &#x3D; *p2;<br>*p2 &#x3D; temp;<br>错误的为：<br>temp &#x3D; p1;<br>p1 &#x3D; p2;<br>p2 &#x3D; temp;</li></ul><hr><p><b>详解</b></p><ul><li>1.数字反转<br>输入123.4<br>输出4.321</li></ul><p>…<br>float a,b&#x3D;0;<br>cin&gt;&gt;a;<br>int c&#x3D;a * 10;  &#x2F;&#x2F;使c变为整数<br>while(c){<br>    b&#x3D;b * 10+c%10;<br>    c&#x3D;c&#x2F;10;<br>}<br>cout&lt;&lt;b&#x2F;1000;<br>…</p><p>while循环<br>开始（1）c&#x3D;1234，b&#x3D;4，c&#x3D;123<br>（2）c&#x3D;123，b&#x3D;43，c&#x3D;12<br>（3）c&#x3D;12，b&#x3D;432，c&#x3D;1<br>（4）c&#x3D;1，b&#x3D;4321，c&#x3D;0<br>结束</p><ul><li>2.题目：母牛的故事：递归<br>打表理清思路先，把牛家分大牛、三岁牛宝、两岁牛宝、一岁牛宝（虚岁，出生就是一岁啦）</li></ul><img src="/2023/02/27/%E5%88%B7%E9%A2%98%E5%BF%83%E5%BE%97/刷题3.jpg" width="70%" height="70%"><p>在第5年时，牛宝开始陆续长成大牛，三岁牛宝就变成了大牛<br>同理，两岁牛宝变三岁牛宝，一岁牛宝变两岁牛宝<br>而新的一岁牛宝则是去年的大牛跟三岁牛宝的总牛数（三岁牛宝今年长成大牛也开始生小牛宝了）<br>思路理清后，就要求递推公式了，把4种牛分别用字母标记：<br>大牛a[]、三岁牛宝b[]、两岁牛宝c[]、一岁牛宝d[]以及牛头数s[]<br>可以得出第n年的各个公式：<br>a[n] &#x3D; a[n-1]+b[n-1]<br>b[n] &#x3D; c[n-1]<br>c[n] &#x3D; d[n-1]<br>d[n] &#x3D; a[n-1]+b[n-1] &#x3D; a[n]<br>则总牛数 s[n]&#x3D;a[n]+b[n]+c[n]+d[n]<br>    &#x3D; a[n-1]+b[n-1]+c[n-1]+d[n-1]+a[n-1]+b[n-1]<br>    &#x3D; s[n-1]+a[n-2]+b[n-2]+c[n-2]<br>    &#x3D; s[n-1]+a[n-3]+b[n-3]+c[n-3]+d[n-3]<br>    &#x3D; s[n-1]+s[n-3]</p><ul><li>3.最大公因数和最小公倍数求发<br>(1)辗转相除法<br>…<br>cin&gt;&gt;m&gt;&gt;n;<br>a &#x3D; m;<br>b &#x3D; n;<br>while (n !&#x3D;0 ){<br>  t &#x3D; m%n;<br>  m &#x3D; n;<br>  n &#x3D; t;<br>  }<br>max &#x3D; m；<br>min &#x3D; a * b&#x2F;max;<br>…<br>（2）暴力法<br>…<br>for(i &#x3D; 1;i&lt; &#x3D; n &amp;&amp; i&lt;&#x3D; m; ++i ){<br>  if(m%i &#x3D;&#x3D; 0 &amp;&amp; n%i &#x3D;&#x3D; 0)<br>  max&#x3D;i;<br>}<br>min &#x3D; m * n &#x2F; max;<br>…</li></ul><hr>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;b&gt;知识点&lt;/b&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;b&gt;做题技巧&lt;/b&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;1.字母大小写转化ASCII+-32&lt;/li&gt;
-&lt;li&gt;&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;b&gt;详解&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1.数字反转&lt;br&gt;输</summary>
+&lt;li&gt;1.在动手写代码之前，在草纸上尽可能地写好要实现的流程。&lt;/li&gt;
+&lt;li&gt;2.在代码中，尽量把每个部分模块化，写成函数、结构体或类。&lt;/li&gt;
+&lt;li&gt;3.对于一些可能重复用到的概念，可以统一转化，方便处理：如，某题给你 </summary>
       
     
     
