@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-28T07:25:30.675Z</updated>
+  <updated>2023-03-29T06:49:11.870Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STL</title>
+    <link href="http://example.com/2023/03/29/STL/"/>
+    <id>http://example.com/2023/03/29/STL/</id>
+    <published>2023-03-29T06:40:47.000Z</published>
+    <updated>2023-03-29T06:49:11.870Z</updated>
+    
+    <content type="html"><![CDATA[<p><b>第一部分</b><br>1.getline(标准输入流，字符串对象)<br>例如：</p><pre><code>getline(cin, s);  // 读入整行字符串，包括空格和换行符</code></pre><ol start="2"><li></li></ol><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;b&gt;第一部分&lt;/b&gt;&lt;br&gt;1.getline(标准输入流，字符串对象)&lt;br&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;getline(cin, s);  // 读入整行字符串，包括空格和换行符
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;/li&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>数据结构笔记</title>
